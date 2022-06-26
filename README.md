@@ -40,14 +40,39 @@ services.AddSingleton(HttpClient)
             request_timeout_in_seconds = 120
         })
         .AddTransient<IImmediateCollection, Services.Repositories.ImmediateCollection>()
+        .AddTransient<IPayment, Services.Repositories.Payment>()
         .AddTransient<ILocation, Services.Repositories.Location>();
 
 var serviceProvider = services.BuildServiceProvider();
 
 ```
 
+```C#
+public class Payment
+{
+        private readonly IPayment _payment;
+
+        public Payment(IPayment payment)
+        {
+                _payment = payment;
+        }
+
+        public async Task<Models.Responses.Bacen.ListPayment> ListPayment()
+        {
+                Models.Responses.Bacen.Envelope<Models.Responses.Bacen.ListPayment> payments = await _payment.ListAsync(new Models.Requests.Bacen.ListPayment()
+                {
+                        inicio = "2022-04-24T00:00:00Z",
+                        fim = "2022-06-25T20:00:00Z"
+                });
+
+                return payments?.Body;
+        }
+}
+
+```
+
 ## Issues
-For major changes, please open an issue to discuss what you would like to change or send e-mail to btg.unofficial.merchant.sdk@gmail.com
+For major changes, please open an issue to discuss your point or send e-mail to btg.unofficial.merchant.sdk@gmail.com
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
