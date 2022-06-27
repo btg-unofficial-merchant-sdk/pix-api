@@ -4,6 +4,8 @@ A BTG Pactual library for merchants customers.
 
 This aims to be an unofficial library version written in C# of the official BTG Pactual API.
 
+https://developer.btgpactual.com/dochub
+
 ## Notes
 Version 2.0.0:
 
