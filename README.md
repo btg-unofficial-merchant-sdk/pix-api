@@ -7,6 +7,14 @@ This aims to be an unofficial library version written in C# of the official BTG 
 https://developer.btgpactual.com/dochub
 
 ## Notes
+Version 2.1.0:
+
+- Add method unlink location from collection
+- Add methods for get qrcode image (base64 and svg)
+- Add method for abstract location create on create collection
+- Performance improvements
+- Retries on dependents methods
+
 Version 2.0.0:
 
 - Add payment management
@@ -26,7 +34,7 @@ Version 1.0.0:
 Use the package manager to install.
 
 ```bash
-Install-Package Unofficial.BtgPactual.Merchant.Sdk -Version 2.0.0
+Install-Package Unofficial.BtgPactual.Merchant.Sdk -Version 2.1.0
 ```
 
 ## Usage
