@@ -6,6 +6,9 @@ This aims to be an unofficial library version written in C# of the official BTG 
 
 https://developer.btgpactual.com/dochub
 
+[![Nuget](https://img.shields.io/nuget/dt/Unofficial.BtgPactual.Merchant.Sdk)](https://www.nuget.org/packages/Unofficial.BtgPactual.Merchant.Sdk)
+[![Nuget](https://img.shields.io/nuget/v/Unofficial.BtgPactual.Merchant.Sdk)](https://www.nuget.org/packages/Unofficial.BtgPactual.Merchant.Sdk)
+
 ## Notes
 Version 2.1.0:
 
