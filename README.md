@@ -9,6 +9,8 @@ https://developer.btgpactual.com/dochub
 [![Nuget](https://img.shields.io/nuget/dt/Unofficial.BtgPactual.Merchant.Sdk)](https://www.nuget.org/packages/Unofficial.BtgPactual.Merchant.Sdk)
 [![Nuget](https://img.shields.io/nuget/v/Unofficial.BtgPactual.Merchant.Sdk)](https://www.nuget.org/packages/Unofficial.BtgPactual.Merchant.Sdk)
 
+![Library Tests](https://user-images.githubusercontent.com/108108778/177191291-3082ee69-a839-4262-bebc-7b68631ab25e.JPG)
+
 ## Notes
 Version 2.1.0:
 
